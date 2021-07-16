@@ -1,20 +1,19 @@
 
 import { ProxyState } from "../AppState.js";
+import List from "../Models/List.js";
 
 export function saveState() {
-  localStorage.setItem('MarksPizza', JSON.stringify({
-    pizzas: ProxyState.pizzas,
-    toppings: ProxyState.toppings
+  localStorage.setItem('Lists', JSON.stringify({
+    lists: ProxyState.lists,
   }))
   console.log('saved state', ProxyState)
 }
 
 export function loadState() {
-  let data = JSON.parse(localStorage.getItem('MarksPizza'))
+  let data = JSON.parse(localStorage.getItem('Lists'))
   console.log(data)
   if (data != null) {
-    ProxyState.pizzas = data.pizzas.map(p => new Pizza(p))
-    ProxyState.toppings = data.toppings.map(t => new Topping(t))
+    ProxyState.lists = data.lists.map(l => new List(l))
   }
 
 }
