@@ -17,8 +17,13 @@ class ListsService {
     ProxyState.tasks = ProxyState.tasks.filter(task => task.listID != id)
   }
 
+  
   removeTask(id) {
     ProxyState.tasks = ProxyState.tasks.filter(task => task.id != id)
+  }
+
+  toggledTaskSelection(taskId){
+    ProxyState.tasks = [...ProxyState.tasks]
   }
 }
 

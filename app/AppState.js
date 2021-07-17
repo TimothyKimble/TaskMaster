@@ -10,6 +10,8 @@ class AppState extends EventEmitter {
 
   tasks = []
 
+  complete = 0
+  tasked = 0
 
 }
 

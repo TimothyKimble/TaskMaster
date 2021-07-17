@@ -10710,4 +10710,8 @@ main {
   height: 20px;
 }
 
+.viewHeightCol {
+  min-height: 25vh;
+}
+
 /*# sourceMappingURL=main.css.map */

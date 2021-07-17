@@ -56,18 +56,18 @@
 
         <!-- NOTE Form Element For Name and Color Submit -->
         <div class="row mt-4">
-            <div class="col-md-6 pl-5">
-                <form onsubmit="app.listsController.createList()" class="d-flex">
+            <div class="col-md-4 pl-5">
+                <form onsubmit="app.listsController.createList()" class="d-flex flex-wrap ">
                     <div class="mx-2 d-flex align-items-end mb-1">
                         <input type="text" name="name" placeholder="Name..." id="name" required minlength="3"
                             maxlength="15">
                     </div>
                     <div class="mx-2 d-flex align-items-end">
-                        <label for="color" class="pr-2">Color: </label>
-                        <input class="mb-2" type="color" name="color" id="color">
+                        <label for="color" class="">Color: </label>
+                        <input class="mb-2 ml-2" type="color" name="color" id="color">
                     </div>
                     <div class="mx-2">
-                        <button class="btn btn-outline-success" type="submit">Create</button>
+                        <button class="btn btn-success" type="submit">Create</button>
                     </div>
                 </form>
             </div>

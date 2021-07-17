@@ -22,12 +22,12 @@ export default class ListsController {
     loadState()
   }
 
-
   createList() {
     event.preventDefault()
     let form = event.target
     let newList = {
       name: form.name.value,
+      color: form.color.value,
 
     }
     listsService.createList(newList)
@@ -35,7 +35,8 @@ export default class ListsController {
   }
 
   destroy(id) {
-    listsService.destroy(id)
+    if(confirm("Delete This List?")==true){
+    listsService.destroy(id)}
   }
 
   addTask(listID) {
@@ -49,7 +50,22 @@ export default class ListsController {
     form.reset()
   }
 
+  toggledTaskSelection(taskId){
+    console.log(taskId, ProxyState.tasks)
+    const existingTask = ProxyState.tasks.find(x => x.id === taskId)
+    existingTask.checked = !existingTask.checked
+    listsService.toggledTaskSelection()
+   }
+
+  
+
   removeTask(id) {
-    listsService.removeTask(id)
+    console.log(id)
+    if(confirm("Remove This Task?") == true){
+    listsService.removeTask(id)}
+  }
+
+  onPageLoad(id){
+    document.getElementById(id).checked = false
   }
 }
