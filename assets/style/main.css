@@ -10705,4 +10705,9 @@ main {
   float: left;
 }
 
+.big-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */

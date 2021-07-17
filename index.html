@@ -59,7 +59,8 @@
             <div class="col-md-6 pl-5">
                 <form onsubmit="app.listsController.createList()" class="d-flex">
                     <div class="mx-2 d-flex align-items-end mb-1">
-                        <input type="text" name="name" placeholder="Name..." id="name">
+                        <input type="text" name="name" placeholder="Name..." id="name" required minlength="3"
+                            maxlength="15">
                     </div>
                     <div class="mx-2 d-flex align-items-end">
                         <label for="color" class="pr-2">Color: </label>
@@ -74,7 +75,7 @@
 
         <!-- NOTE Cards for Lists -->
         <div class="row d-flex justify-content-center" id="lists">
-            <div class="col-md-3 d-flex justify-content-center flex-column m-4">
+            <!-- <div class="col-md-3 d-flex justify-content-center flex-column m-4">
                 <div class="row bg-primary">
                     <div class="col-md-12 text-center">
                         <h4 class="m-0">List</h4>
@@ -105,7 +106,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
 
         </div>
