@@ -31,3 +31,7 @@ main {
 .viewHeightCol {
   min-height: 25vh;
 }
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}

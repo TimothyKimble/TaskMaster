@@ -6,9 +6,27 @@ class AppState extends EventEmitter {
   /** @type {Value[]} */
   values = []
 
-  lists = []
+  lists = [
+    {
+      "id": "kZ4o5NDbbE",
+      "name": "Tester",
+      "color": "#1fdba6"
+    }
+  ]
 
-  tasks = []
+  tasks = [
+    {
+      "id": "X664MyA1fh",
+      "listID": "kZ4o5NDbbE",
+      "name": "Testing My Tester Because Testing Is Important So."
+    },
+    {
+      "id": "THe4yrMCYW",
+      "listID": "kZ4o5NDbbE",
+      "name": "Checking that completed tasks are counted",
+      "checked": true
+    }
+  ]
 
   complete = 0
   tasked = 0

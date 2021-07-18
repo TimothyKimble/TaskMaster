@@ -10716,4 +10716,8 @@ main {
   min-height: 25vh;
 }
 
+input[type=checkbox]:checked + label.strikethrough {
+  text-decoration: line-through;
+}
+
 /*# sourceMappingURL=main.css.map */
