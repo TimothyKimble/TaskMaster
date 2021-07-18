@@ -12,10 +12,10 @@ export default class List {
   get Template() {
     const listTasks= ProxyState.tasks.filter(x => x.listID === this.id)
     return `
-    <div class="col-md-3 d-flex  flex-column m-4">
+    <div class="col-md-3 d-flex  flex-column m-4 ">
     
     <div class="row bg-primary border-left border-right border-primary border-top">
-        <div class="col-md-12 text-center text-light" style="background-color: ${this.color}">
+        <div class="col-md-12 text-center text-light " style="background-color: ${this.color}">
             <h4  class="m-0">${this.name}</h4>
             <p class="m-0">${listTasks.filter(x => x.checked).length}/${listTasks.length}</p>
             <i class="fa fa-lg fa-trash action text-danger" title="delete List" onclick="app.listsController.destroy('${this.id}')"></i>

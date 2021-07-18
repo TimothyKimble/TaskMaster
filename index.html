@@ -37,26 +37,31 @@
 
 <body class="">
     <header class="container-fluid sticky-top p-0">
-        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
+        <div class="row">
+        <nav class="col-md-12 navbar navbar-dark navbar-expand bg-dark text-light d-flex justify-content-between">
+            
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
                 <span class="ml-2">TaskMaster</span>
             </a>
         </nav>
+    </div>
+</div>
     </header>
     <main class="container-fluid">
         <div id="app"></div>
 
         <!-- NOTE Title for the Taskmaster -->
-        <div class="row bg-primary">
-            <div class="col-md-12 text-center p-3 mb-1">
-                <h1>TaskMaster</h1>
+        <div class="row">
+            <div class="col-md-12 text-center p-3 mb-1 Text-light">
+                <h1 class="text-light">TaskMaster</h1>
             </div>
         </div>
 
         <!-- NOTE Form Element For Name and Color Submit -->
         <div class="row mt-4">
-            <div class="col-md-4 pl-5">
+            <div class="col-md-5 pl-5">
+                <div class="text-light"><h3>Give your list a name and color to start organizing!</h3></div>
                 <form onsubmit="app.listsController.createList()" class="d-flex flex-wrap ">
                     <div class="mx-2 d-flex align-items-end mb-1">
                         <input type="text" name="name" placeholder="Name..." id="name" required minlength="3"
@@ -114,13 +119,14 @@
     </main>
     <footer class="bg-dark text-light container-fluid">
         <div class="text-center">
-            <p><small>Made with love by Codeworks</small></p>
+            <p><small>Made with 🐱 by Codeworks</small></p>
         </div>
     </footer>
 
     <script src="app/main.js" type="module"></script>
     <script src="https://kit.fontawesome.com/eb06e1df07.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
 </body>
 
 </html>

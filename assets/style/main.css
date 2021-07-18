@@ -26,7 +26,7 @@
   --warning: #FF7F50;
   --danger: #EB5757;
   --light: #f8f9fa;
-  --dark: #272727;
+  --dark: #946bf700;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1838,21 +1838,21 @@ pre code {
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  background-color: #c3c3c3;
+  background-color: rgba(255, 255, 255, 0.72);
 }
 .table-dark th,
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-  border-color: #8f8f8f;
+  border-color: rgba(255, 255, 255, 0.48);
 }
 
 .table-hover .table-dark:hover {
-  background-color: #b6b6b6;
+  background-color: rgba(242, 242, 242, 0.72);
 }
 .table-hover .table-dark:hover > td,
 .table-hover .table-dark:hover > th {
-  background-color: #b6b6b6;
+  background-color: rgba(242, 242, 242, 0.72);
 }
 
 .table-active,
@@ -2626,32 +2626,32 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: white;
-  background-color: #272727;
-  border-color: #272727;
+  background-color: #946bf700;
+  border-color: #946bf700;
 }
 .btn-dark:hover {
   color: white;
-  background-color: #141414;
-  border-color: #0e0e0e;
+  background-color: rgba(122, 71, 245, 0);
+  border-color: rgba(113, 59, 244, 0);
 }
 .btn-dark:focus, .btn-dark.focus {
   color: white;
-  background-color: #141414;
-  border-color: #0e0e0e;
-  box-shadow: 0 0 0 0.2rem rgba(71, 71, 71, 0.5);
+  background-color: rgba(122, 71, 245, 0);
+  border-color: rgba(113, 59, 244, 0);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 .btn-dark.disabled, .btn-dark:disabled {
   color: white;
-  background-color: #272727;
-  border-color: #272727;
+  background-color: #946bf700;
+  border-color: #946bf700;
 }
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
   color: white;
-  background-color: #0e0e0e;
-  border-color: #070707;
+  background-color: rgba(113, 59, 244, 0);
+  border-color: rgba(104, 47, 244, 0);
 }
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(71, 71, 71, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
 .btn-outline-primary {
@@ -2830,28 +2830,28 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-dark {
-  color: #272727;
-  border-color: #272727;
+  color: #946bf700;
+  border-color: #946bf700;
 }
 .btn-outline-dark:hover {
   color: white;
-  background-color: #272727;
-  border-color: #272727;
+  background-color: #946bf700;
+  border-color: #946bf700;
 }
 .btn-outline-dark:focus, .btn-outline-dark.focus {
-  box-shadow: 0 0 0 0.2rem rgba(39, 39, 39, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(148, 107, 247, 0.5);
 }
 .btn-outline-dark.disabled, .btn-outline-dark:disabled {
-  color: #272727;
+  color: #946bf700;
   background-color: transparent;
 }
 .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle {
   color: white;
-  background-color: #272727;
-  border-color: #272727;
+  background-color: #946bf700;
+  border-color: #946bf700;
 }
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(39, 39, 39, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(148, 107, 247, 0.5);
 }
 
 .btn-link {
@@ -4735,15 +4735,15 @@ a.badge-light:focus, a.badge-light.focus {
 
 .badge-dark {
   color: white;
-  background-color: #272727;
+  background-color: #946bf700;
 }
 a.badge-dark:hover, a.badge-dark:focus {
   color: white;
-  background-color: #0e0e0e;
+  background-color: rgba(113, 59, 244, 0);
 }
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(39, 39, 39, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(148, 107, 247, 0.5);
 }
 
 .jumbotron {
@@ -4876,15 +4876,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-dark {
-  color: #141414;
-  background-color: #d4d4d4;
-  border-color: #c3c3c3;
+  color: rgba(0, 0, 0, 0.48);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.72);
 }
 .alert-dark hr {
-  border-top-color: #b6b6b6;
+  border-top-color: rgba(242, 242, 242, 0.72);
 }
 .alert-dark .alert-link {
-  color: black;
+  color: rgba(0, 0, 0, 0.48);
 }
 
 @keyframes progress-bar-stripes {
@@ -5231,17 +5231,17 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-dark {
-  color: #141414;
-  background-color: #c3c3c3;
+  color: rgba(0, 0, 0, 0.48);
+  background-color: rgba(255, 255, 255, 0.72);
 }
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-  color: #141414;
-  background-color: #b6b6b6;
+  color: rgba(0, 0, 0, 0.48);
+  background-color: rgba(242, 242, 242, 0.72);
 }
 .list-group-item-dark.list-group-item-action.active {
   color: white;
-  background-color: #141414;
-  border-color: #141414;
+  background-color: rgba(0, 0, 0, 0.48);
+  border-color: rgba(0, 0, 0, 0.48);
 }
 
 .close {
@@ -6070,13 +6070,13 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #272727 !important;
+  background-color: #946bf700 !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #0e0e0e !important;
+  background-color: rgba(113, 59, 244, 0) !important;
 }
 
 .bg-white {
@@ -6156,7 +6156,7 @@ button.bg-dark:focus {
 }
 
 .border-dark {
-  border-color: #272727 !important;
+  border-color: #946bf700 !important;
 }
 
 .border-white {
@@ -9747,11 +9747,11 @@ a.text-light:hover, a.text-light:focus {
 }
 
 .text-dark {
-  color: #272727 !important;
+  color: #946bf700 !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
-  color: #010101 !important;
+  color: rgba(96, 34, 243, 0) !important;
 }
 
 .text-body {
@@ -10688,7 +10688,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f2f2f2;
+  background: #000324;
+  background: linear-gradient(90deg, #000324 0%, #00a171 0%, #0347d7 73%, #5331dd 95%);
 }
 
 main {
