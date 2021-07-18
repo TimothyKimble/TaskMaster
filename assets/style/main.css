@@ -10690,6 +10690,7 @@ body {
   min-height: 100vh;
   background: #000324;
   background: linear-gradient(90deg, #000324 0%, #00a171 0%, #0347d7 73%, #5331dd 95%);
+  overflow-x: hidden;
 }
 
 main {

@@ -1,6 +1,7 @@
 import { ProxyState } from "../AppState.js";
 import { listsService } from "../Services/ListsService.js";
 import { loadState, saveState } from "../Utils/LocalStorage.js"
+import NotificationService from "../Services/NotificationServices.js";
 
 
 function _draw() {
@@ -34,10 +35,12 @@ export default class ListsController {
     form.reset()
   }
 
-  destroy(id) {
-    if(confirm("Delete This List?")==true){
-    listsService.destroy(id)}
-  }
+  async destroy(id) {
+   
+    if(await NotificationService.confirmAction("Are you sure you want to delete this List?") === true){
+    listsService.destroy(id)
+    NotificationService.toast("Deleted Successfully")}
+  } 
 
   addTask(listID) {
     event.preventDefault()
@@ -59,10 +62,11 @@ export default class ListsController {
 
   
 
-  removeTask(id) {
+  async removeTask(id) {
     console.log(id)
-    if(confirm("Remove This Task?") == true){
-    listsService.removeTask(id)}
+    if(await NotificationService.confirmAction("Are you sure you want to delete this task?") === true){
+    listsService.removeTask(id)
+    NotificationService.toast("Deleted Successfully")}
   }
 
   onPageLoad(id){

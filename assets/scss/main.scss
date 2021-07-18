@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   background: rgb(0,3,36);
 background: linear-gradient(90deg, rgba(0,3,36,1) 0%, rgba(0,161,113,1) 0%, rgba(3,71,215,1) 73%, rgba(83,49,221,1) 95%);
+overflow-x: hidden;
 }
 
 main {
